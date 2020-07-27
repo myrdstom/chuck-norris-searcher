@@ -1,5 +1,6 @@
 import React from 'react';
 import FactsItems from './FactsItems';
+import './_facts.scss';
 
 const FactsDetails = ({ facts, onChange, factsPerPage }) => {
     return (

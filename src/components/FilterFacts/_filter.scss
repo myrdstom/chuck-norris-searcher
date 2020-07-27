@@ -1,5 +1,5 @@
 .filter__account {
-  background-color: $optional-background;
+  background-color: #eee;
   min-height: 20vh;
 }
 
@@ -9,10 +9,10 @@
 }
 
 #myForm label {
-  font-family: $font-family-base;
-  padding-left: 27%;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  padding-left: 30%;
   line-height: 5rem;
-  font-size: $very-large-font-size;
+  font-size: 28px;
 }
 
 #myForm input {
@@ -37,10 +37,10 @@
 
 @media only screen and (max-width: 800px) {
   #myForm label {
-    font-family: $font-family-base;
+    font-family: 'Poppins', Helvetica, sans-serif;
     padding-left: 30%;
     line-height: 5rem;
-    font-size: $large-font-size;
+    font-size: 18px;
   }
 
   #myForm input {
@@ -50,11 +50,9 @@
 
 @media only screen and (max-width: 500px) {
   #myForm label {
-    padding-left: 18%;
+    padding-left: 35%;
   }
-  .filter__content {
-    padding-top: 40%;
-  }
+
   #myForm input {
     margin-left: 5%;
     max-width: 90%;

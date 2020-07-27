@@ -1,4 +1,5 @@
 import React from "react";
+import './_filter.scss';
 
 const FilterFacts = props =>{
     const { onChange, searchParam, onKeyDown } = props;

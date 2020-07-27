@@ -11,6 +11,10 @@ The application is hosted on [Netlify](https://cocky-joliot-b68bd9.netlify.app/)
 - Clone the application with this url `https://github.com/myrdstom/chuck-norris-searcher.git`
 - install the dependencies using `yarn` or `npm install`
 
+## Run the application
+- CD into the root of the folder
+- Run `yarn start` or `npm start`
+
 ## Run end to end tests
 
 - Open the terminal and run the command `yarn run cypress` or `npm run cypress`

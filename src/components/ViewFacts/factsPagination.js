@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import './_pagination.scss';
 
 const FactsPagination = ({factsPerPage, totalFacts,  paginate, currentPage, nextPage, previousPage, firstPage, lastPage}) =>{
     const pageNumbers = [];
