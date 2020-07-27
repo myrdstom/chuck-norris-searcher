@@ -3,6 +3,10 @@ import FactsDetails from './factsDetails';
 import FactsPagination from './factsPagination';
 import { toast } from 'react-toastify';
 
+/**
+ * This component handles the rendering of filtered data
+ */
+
 const ViewFacts = ({ data }) => {
     const [facts, setFacts] = useState({
         factsData: '',
@@ -34,14 +38,33 @@ const ViewFacts = ({ data }) => {
         }
     }, [data]);
 
+    /**
+     * @function Sets the value of the number of items to be rendered per page
+     */
     const handleChange = (e) => setFactsPerPage(e.target.value);
 
+    /**
+     * @function Gets the last page
+     */
+
     const indexOfLastFact = currentPage * factsPerPage;
+
+    /**
+     * @function Gets the first page
+     */
     const indexOfFirstFact = indexOfLastFact - factsPerPage;
+
+    /**
+     * @function Gets the Chuck norris facts to be displayed
+     */
     const currentFacts = facts.factsData.slice(
         indexOfFirstFact,
         indexOfLastFact
     );
+
+    /**
+     * @function Show the currently active page
+     */
 
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber);
@@ -51,22 +74,40 @@ const ViewFacts = ({ data }) => {
         });
     };
 
+    /**
+     * @function that lets a user click the arrow to the next page
+     */
+
     const nextPage = (pageLast) => {
         if (currentPage !== pageLast) {
             setCurrentPage(currentPage + 1);
         }
     };
 
+    /**
+     * @function that lets a user click the arrow to the previous  page
+     */
+
     const prevPage = () => {
         if (currentPage !== 1) {
             setCurrentPage(currentPage - 1);
         }
     };
+
+    /**
+     * @function that lets a user click the arrow to the first page
+     */
+
     const firstPage = (pageOne) => {
         if (currentPage !== 1) {
             setCurrentPage(pageOne);
         }
     };
+
+    /**
+     * @function that lets a user click the arrow to the last page
+     */
+
     const lastPage = (pageLast) => {
         setCurrentPage(pageLast);
     };
@@ -94,7 +135,7 @@ const ViewFacts = ({ data }) => {
                     />
                 </div>
             ) : (
-                <div className="pre-render"/>
+                <div className="pre-render" />
             )}
         </div>
     );

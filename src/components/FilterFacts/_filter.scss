@@ -1,0 +1,60 @@
+.filter__account {
+    background-color: #eee;
+    min-height: 20vh;
+}
+
+#myForm {
+    display: flex;
+    justify-content: center;
+}
+
+#myForm label {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    padding-left: 30%;
+    line-height: 5rem;
+    font-size: 28px;
+}
+
+#myForm input {
+    margin-left: 15%;
+}
+
+#search {
+    outline: currentcolor none 0px;
+    border: 0px none;
+    border-radius: 0.25rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 1rem;
+    color: #707070;
+    font-family: Poppins, SF Mono, Fira Code, Fira Mono, Roboto Mono,
+        Lucida Console, Monaco, monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #myForm label {
+        font-family: 'Poppins', Helvetica, sans-serif;
+        padding-left: 30%;
+        line-height: 5rem;
+        font-size: 18px;
+    }
+
+    #myForm input {
+        margin-left: 4%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #myForm label {
+        padding-left: 35%;
+    }
+
+    #myForm input {
+        margin-left: 5%;
+        max-width: 90%;
+    }
+}

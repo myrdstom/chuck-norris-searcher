@@ -5,24 +5,30 @@ const FactsItems = (props) => {
     return (
         <div>
             <div className="card-items">
-                    <div className="spacing">
-                        <div className="section1" />
-                        <div className="section2">
-                            <div className="fact-top">
-                                <div className="fact-top-content">
-                                    <div className="grid">
+                <div className="spacing">
+                    <div className="section1" />
+                    <div className="section2">
+                        <div className="fact-top">
+                            <div className="fact-top-content">
+                                <div className="grid">
                                     <span className="fact-image">
-                                        <img src={icon_url} alt="Chuck Norris"/>
+                                        <img
+                                            src={icon_url}
+                                            alt="Chuck Norris"
+                                        />
                                     </span>
-                                    <h3 className="repo-description" id="single-fact">
+                                    <h3
+                                        className="repo-description"
+                                        id="single-fact"
+                                    >
                                         {value}
                                     </h3>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="section3" />
                     </div>
+                    <div className="section3" />
+                </div>
             </div>
         </div>
     );

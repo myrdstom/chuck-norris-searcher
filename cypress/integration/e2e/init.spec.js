@@ -1,4 +1,3 @@
-
 describe('Cypress', () => {
     beforeEach(() => {
         cy.visit('/');
@@ -10,7 +9,7 @@ describe('Cypress', () => {
             .type(param)
             .type('{enter}')
             .trigger('input')
-            .get('h3', {timeout: 15000})
+            .get('h3', { timeout: 15000 })
             .contains('Chuck');
     });
 
@@ -20,7 +19,7 @@ describe('Cypress', () => {
             .type(param)
             .type('{enter}')
             .trigger('input')
-            .get('h3', {timeout: 15000})
+            .get('h3', { timeout: 15000 })
             .get('.fact-top-content')
             .find('h3')
             .should('have.length', 10);
@@ -32,8 +31,9 @@ describe('Cypress', () => {
             .type(param)
             .type('{enter}')
             .trigger('input')
-            .get('h3', {timeout: 15000})
-            .get('select').select('5')
+            .get('h3', { timeout: 15000 })
+            .get('select')
+            .select('5')
             .get('.fact-top-content')
             .find('h3')
             .should('have.length', 5);

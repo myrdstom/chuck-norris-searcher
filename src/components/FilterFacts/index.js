@@ -6,10 +6,18 @@ import 'react-toastify/dist/ReactToastify.css';
 import { baseUrl } from '../../config/config';
 import {toast} from "react-toastify";
 
+/**
+ * This component handles the filtration of data and determines what facts are to be displayed
+ */
+
 const FilterFactsView = () => {
     const [searchParam, setSearchParam] = useState('');
     const [data, setData] = useState('');
     const handleChange = (e) => setSearchParam(e.target.value);
+
+    /**
+     * The function that performs the data filtering
+     */
 
     const handleKeyPress = (e) => {
         if (e.keyCode === 13) {
