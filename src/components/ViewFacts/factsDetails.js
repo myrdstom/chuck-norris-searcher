@@ -15,7 +15,7 @@ const FactsDetails = ({ facts, onChange, factsPerPage }) => {
                             onChange={onChange}
                             className="dropdown"
                         >
-                            <option value="5">5</option>
+                            <option value="5" className="firstOption">5</option>
                             <option value="10">10</option>
                             <option value="15">15</option>
                             <option value="20">20</option>

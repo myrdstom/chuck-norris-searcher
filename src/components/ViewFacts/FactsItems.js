@@ -14,7 +14,7 @@ const FactsItems = (props) => {
                                     <span className="fact-image">
                                         <img src={icon_url} alt="Chuck Norris"/>
                                     </span>
-                                    <h3 className="repo-description">
+                                    <h3 className="repo-description" id="single-fact">
                                         {value}
                                     </h3>
                                     </div>
